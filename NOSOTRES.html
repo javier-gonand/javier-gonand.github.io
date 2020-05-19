@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Andy y Lucas </title>
+	<link type="text/css" rel="stylesheet" href="../CSS/CSSNOSOTRES-2.css"/>
+</head>
+<body>
+    <header>
+        <p>Andy y Lucas</p>
+        <h1> NOSOTROS </h1>
+	
+    <nav class="barra-navegacion">
+        <ul>
+           <li class="seleccionado">Nosotros</li>
+              
+           <li>
+               <a href="canciones.html">Canciones</a>
+            </li>
+           <li>
+               <a href="conciertos.html">Conciertos</a> 
+            </li>
+           <li>
+               <a href="PRODUCCION.html">Cómo producir una canción (o álbum)</a> 
+            </li>
+           <li>
+               <a href="index.html">Inicio</a> 
+            </li>
+        </ul>
+    </nav>
+
+    </header>
+    
+    <p> <img class="pequeña" src="img/andylucas.jpg"
+    alt= "Imagen Andy y Lucas"></p>
+    
+    <p>
+        <p>Galería de imágenes</p>
+        <img id="mostrar-imagen" onclick="cambiarImagen()" src="img/1.jpg" width="180" height="180"/>
+        <script>
+            function cambiarImagen(){
+                var imagenMostrada = document.getElementById('mostrar-imagen');
+                if(imagenMostrada.src.match("img/1.jpg")){
+                    imagenMostrada.src="img/2.jpg"
+                }
+                else{imagenMostrada.src="img/1.png"}
+            }
+        </script>
+    
+    
+    </p>
+    <article>
+        <h1>Conoce a Andy y Lucas</h1>
+        <p>Somos Andy y Lucas, originarios de Cádiz y nos gusta crear canciones para nuestro público.</p>
+        <p><img class="mediana" src= "img/concierto.jpg" alt="nosotros en concierto"/></p>
+
+            <section>
+                <h2>Andy, el guaperas</h2>
+                <p>Andy se encarga de tocar los instrumentos y de dar las entrevistas a la televisiones.</p>
+                <p><img class="pequeña" src= "img/andy.jpg" alt="Andy"/></p>
+            </section>
+            <section>
+                <h2>Lucas, la voz cantante</h2>
+                <p>Es el encargado de dar voz a muchas de las canciones y de componerlas todas.</p>
+                <p><img class="pequeña" src= "img/lucas.jpg" alt="Lucas"/></p>
+            </section>
+    </article>
+    <aside>
+        <section>
+            <h2>¡Compra nuestras camisetas!</h2>
+            <h3>Tenemos diferentes diseños y tallas, para que vayas guapx por la calle.</h3>
+            <h3>Nuestros diseños</h3>
+            <ul>
+                <li>Cara de andy</li>
+                <li>Cara de lucas</li>
+                <li>Foto con los músicos y lista de conciertos en la parte de atrás</li>
+            </ul>
+            <p><img class="mediana" src="img/tallas.jpg" alt="Tallas"/> </p>
+        </section>
+
+        <section>
+            <h2>Compra nuestros CD en Amazon o en distribudores autorizados</h2>
+            <p>En ellos encontrarás nuestras canciones más faosas en alta calidad de sonido.</p>
+            <p>NO PIRATEES, CREA CULTURA</p>
+
+        </section>
+
+        <section>
+            <h2>
+                Nuestro próximo concierto en MADRID todavía no está lleno 
+            </h2>
+        </section>
+    </aside>
+    <footer>
+        <p class="derechos">Contenido propiedad de Andy y Lucas, todos los derechos reservados.</p>
+        <p class="contacto">Contacto: <a href="mailto: gira@andyylucassony.com"> gira@andyylucassony.com</a></p>
+    </footer>
+
+</body>
+</html>
+
